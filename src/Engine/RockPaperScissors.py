@@ -1,4 +1,6 @@
 from random import randint
+import sys
+sys.path.append('/home/derek/Documents/UoG/GA1/FPSE/Week3/unitTesing/PythonRockPaperScissors')
 from src.Display.InputConsole import InputConsole
 from src.Display.OutputConsole import OutputConsole
 from src.DataSource.ConfigFromFile import ConfigFromFile
