@@ -15,6 +15,10 @@ class RockTest(unittest.TestCase):
         result = self.rock.determine_winner(0, 0)
         self.assertEqual("Draw", result)
 
+    def test_determine_winner_rock_rock_player(self):
+        result = self.rock.determine_winner(0, 1)
+        self.assertEqual("Player wins", result)
+
     def test_GenerateGamesRequestStub(self):
         self.rock.set_config(ConfigFromStub())
         result = self.rock.generate_games_list_request();
